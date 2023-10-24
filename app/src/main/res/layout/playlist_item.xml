@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:background="@drawable/layout_border">
+
+        <ImageButton
+            android:id="@+id/playlistPlayButton"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/play_buttons_style"
+            android:backgroundTint="@color/white_gray"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/play_button_img" />
+
+        <TextView
+            android:id="@+id/playlistName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/corbel"
+            android:singleLine="true"
+            android:text="PlaylistName"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/playlistItemMenuButton"
+            app:layout_constraintStart_toEndOf="@+id/playlistPlayButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/playlistItemMenuButton"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/play_buttons_style"
+            android:backgroundTint="@color/white_gray"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+        <TextView
+            android:id="@+id/numOfSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/playlistName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlaylistFromYoutubePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextYoutubeLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/purple"
+            android:ems="10"
+            android:hint="@string/edit_text_playlist_link_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/purple"
+            android:textColorHighlight="@color/purple"
+            android:textColorHint="@color/light_purple"
+            android:textColorLink="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addPlaylistLinkDescription"
+            app:layout_constraintTop_toBottomOf="@+id/addPlaylistLinkDescription" />
+
+        <TextView
+            android:id="@+id/addPlaylistLinkDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/gadugi"
+            android:text="@string/youtube_link_plain_header"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextPlaylistName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPlaylistName" />
+
+        <TextView
+            android:id="@+id/addPlaylistNameDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gadugi"
+            android:text="@string/playlist_name_plain_header"
+            android:textColor="@color/purple"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="@+id/AddPlaylistsPageHeader"
+            app:layout_constraintTop_toBottomOf="@+id/AddPlaylistsPageHeader" />
+
+        <TextView
+            android:id="@+id/AddPlaylistsPageHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corbelb"
+            android:text="@string/add_playlist_fragment_header"
+            android:textColor="@color/purple"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextPlaylistName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/purple"
+            android:ems="10"
+            android:hint="@string/edit_text_playlist_name_hint"
+            android:textCursorDrawable="@color/purple"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/purple"
+            android:textColorHighlight="@color/purple"
+            android:textColorHint="@color/light_purple"
+            android:textColorLink="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/addPlaylistNameDescription"
+            app:layout_constraintTop_toBottomOf="@+id/addPlaylistNameDescription" />
+
+        <Button
+            android:id="@+id/savePlaylistButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/purple"
+            android:onClick="downloadPlaylist"
+            android:text="@string/savePlaylistButtonText"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextYoutubeLink"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

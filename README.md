@@ -10,7 +10,7 @@ Available functions:
 - Listen to songs with buttons stop/play, next, previous and time slider.
 - Share playlist and songs to other application as mp3 files.
 
-Video demonstration
+Video demonstration(don't forget to turn on the sound)
 
 https://github.com/dvzadara/list-play-android-app/assets/71148539/03bda6c0-9e41-4d84-a622-a30866e2ba9b
 
